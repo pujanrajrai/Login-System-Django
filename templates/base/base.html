@@ -1,0 +1,28 @@
+{% include 'base/header.html' %}
+{% block body %}
+{% endblock body %}
+{% include 'base/footer.html' %}
+
+
+
+
+
+
+
+
+
+
+{% comment %} {% if request.user.is_authenticated %}
+<p> 
+hello {{request.user.username}} 
+<a href='{% url 'logoutPage' %}'>logout</a>
+{% else %}
+<a href='{% url 'registerPage' %}'>register</a>
+<a href='{% url 'loginPage' %}'>login</a>
+
+</p>
+{% endif %}
+
+
+{% block body %}
+{% endblock body %} {% endcomment %}
